@@ -1,3 +1,6 @@
+# --------------------------------------
+# Image Settings
+# --------------------------------------
 index_img: /img/index.webp
 default_top_img: /img/default_top_img.webp
 
@@ -56,9 +59,24 @@ code_blocks:
 search:
   # 选择你需要的搜索方式，不需要开启留空白
   # 主题支持三种搜索方式（algolia_search / local_search / docsearch），你可以选择一种或者多种搜索方式。
-  use:
+  use: local_search
   # 搜索框的提示文字
-  placeholder:
+  placeholder: 嘎嘎,搜索框,嘎嘎,搜索框
+# Local Search
+local_search:
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+
+# 关闭网站统计
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # 社交链接配置
 social:
@@ -95,6 +113,7 @@ pjax:
 inject:
   head:
     - <link rel="stylesheet" href="/css/mouse.css">
+    - <link rel="stylesheet" href="/css/theme.css">
   bottom:
     - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>

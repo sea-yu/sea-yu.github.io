@@ -1,0 +1,16 @@
+/** 搜索框 */
+.local-search-box--input::placeholder {
+    color: #ccc;
+}
+
+/* 页脚 */
+#footer {
+    background-color: #313333;
+}
+
+#footer-wrap {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
