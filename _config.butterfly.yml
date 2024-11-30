@@ -1,0 +1,100 @@
+index_img: /img/index.webp
+default_top_img: /img/default_top_img.webp
+
+subtitle:
+  enable: true
+  # Typewriter Effect (打字效果)
+  effect: true
+  sub:
+    - 路漫漫其修远兮,吾将上下而求索
+  # source 调用第三方服务
+  # false 关闭调用
+  # 1  调用一言网的一句话（简体） https://hitokoto.cn/
+  # 2  调用一句网（简体） http://yijuzhan.com/
+  # 3  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
+  source: false
+  # Customize typed.js
+  # https://github.com/mattboldt/typed.js/#customization
+  typed_option:
+
+# 首页布局
+# 1 封面在左，信息在右
+# 2 封面在右，信息在左
+# 3 封面和信息左右交替显示
+# 4 封面在上，信息在下
+# 5 信息显示在封面上
+# 6 瀑布流布局 - 封面在上，信息在下
+# 7 瀑布流布局 - 信息显示在封面上
+index_layout: 4
+
+# 菜单配置
+menu:
+  首页: / || home || fas fa-home
+  归档: /archives/ || fas fa-archive
+
+# 代码块配置
+code_blocks:
+  # 代码高亮主题，可选 darker / pale night / light / ocean / false
+  theme: darker
+  # 是否使用 Mac 风格
+  macStyle: false
+  # 代码块高度限制 (单位: px)
+  height_limit: false
+  # 是否启用单词换行
+  word_wrap: false
+  # 工具栏
+  copy: true
+  language: true
+  # true: 收缩代码块 / false: 展开代码块 / none: 展开代码块并隐藏按钮
+  shrink: false
+  # 是否启用全屏模式
+  fullpage: false
+
+
+# 搜索配置
+search:
+  # 选择你需要的搜索方式，不需要开启留空白
+  # 主题支持三种搜索方式（algolia_search / local_search / docsearch），你可以选择一种或者多种搜索方式。
+  use:
+  # 搜索框的提示文字
+  placeholder:
+
+# 社交链接配置
+social:
+  fab fa-github: https://github.com/sea-yu || Github || "#hdhfbb"
+  fas fa-envelope: mailto:yhyuhai13@163.com || Email || "#000000"
+
+# 头像配置
+avatar:
+  img: /img/avatar.jpg
+  effect: false # 头像会一直转圈
+
+#文章页面
+# TOC 目录
+toc:
+  style_simple: true
+
+# 侧栏配置
+# 滚动状态百分比
+rightside_scroll_percent: true
+aside:
+  card_announcement:
+    enable: false
+
+# 页脚配置
+footer:
+  owner:
+    enable: false
+
+# pjax
+pjax:
+  enable: true
+
+# Inject
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/mouse.css">
+  bottom:
+    - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
