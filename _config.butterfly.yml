@@ -97,6 +97,11 @@ toc:
 # 滚动状态百分比
 rightside_scroll_percent: true
 aside:
+  card_author:
+    enable: true
+    description: 一个喜欢看番,打游戏,写代码的i人
+    button:
+      enable: false
   card_announcement:
     enable: false
 

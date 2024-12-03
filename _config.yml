@@ -5,11 +5,12 @@
 # Site
 title: SeaYu Blog
 subtitle: ''
-description: ''
-keywords:
+description: SeaYu Blog
+keywords: SeaYu Blog
 author: SeaYu
 language: zh-CN
-timezone: ''
+email: yhyuhai13@163.com
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -102,3 +103,61 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+OhMyLive2d:
+  enable: true
+  CDN: https://registry.npmmirror.com/oh-my-live2d/latest/files
+  option:
+    dockedPosition: 'left'
+    importType: 'cubism5'
+    menus:
+      items: |
+        (defaultItems)=>[]
+    libraryUrls:
+      complete: https://registry.npmmirror.com/oh-my-live2d/latest/files/lib/complete.js
+      cubism2: https://registry.npmmirror.com/oh-my-live2d/latest/files/lib/cubism2.js
+      cubism5: https://registry.npmmirror.com/oh-my-live2d/latest/files/lib/cubism5.js
+    # 是否在移动端显示
+    mobileDisplay: false
+    models:
+      - path: /live2d/ganyu/Ganyu1024.model3.json
+        motionPreloadStrategy: IDLE
+        scale: 0.05
+    tips:
+      style:
+        width: 150
+        height: 80
+        minHeight: 80
+        left: calc(50%)
+        top: -80px
+        fontSize: 13px
+        backgroundColor: '#313333'
+        color: '#fff'
+      welcomeTips:
+        message:
+          # 早晨 5-7 点提示信息内容
+          daybreak: 早上好…唔？是哪里没有梳理好吗，请不要盯着我的…盯着我的头饰看。
+          # 早晨 7-9 点提示信息内容
+          morning: 早上好…唔？是哪里没有梳理好吗，请不要盯着我的…盯着我的头饰看。
+          # 中午 11-13 点提示信息内容
+          noon: 啊…需要午觉。如果没有什么特别的事情…我就先行告退了。
+          # 下午 14-17 点提示信息内容
+          afternoon: 啊…需要午觉。如果没有什么特别的事情…我就先行告退了。
+          # 傍晚 18-19 点提示信息内容
+          dusk: 万家灯火就在眼前，人们的生活究竟是怎么样的呢…欸？你想邀请我去夜市？啊…不，不好意思，我就不去了吧。
+          # 晚上 20-21 点提示信息内容
+          night: 万家灯火就在眼前，人们的生活究竟是怎么样的呢…欸？你想邀请我去夜市？啊…不，不好意思，我就不去了吧。
+          # 深夜 22-23 点提示信息内容
+          lateNight: 愿帝君保佑你，愿你的每个梦都踏实而香甜。
+          # 凌晨 0-4 点提示信息内容
+          weeHours: 愿帝君保佑你，愿你的每个梦都踏实而香甜。
+      idleTips:
+        interval: 15000
+        message:
+          - 可以陪我一起加班吗?
+          - 安逸的氛围…喜欢。
+          - 趴在草地上，能听见大地的心跳。
+          - 工作…工作还没做完…真的可以提前休息吗？
+      copyTips:
+        message:
+          -如果能帮到你,真是太好了！
